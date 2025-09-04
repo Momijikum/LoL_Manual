@@ -9,8 +9,3 @@ search.addEventListener('input', ()=>{
   const areas = document.querySelectorAll('.content .card p, .content .card li, .role');
   areas.forEach(el=>{el.innerHTML = el.textContent.replace(re, s => `<mark>${s}</mark>`)});
 });
-
-// --- ダーク／ライト切替 ---
-document.getElementById('toggleTheme').addEventListener('click', ()=>{
-  document.body.classList.toggle('dark');
-});

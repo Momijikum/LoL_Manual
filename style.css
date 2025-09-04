@@ -122,6 +122,17 @@ mark{
   padding:0 4px;
   border-radius:3px;
 }
+.tooltip-trigger{
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  cursor: help;
+  color: var(--accent);
+}
+.tooltip-trigger:hover {
+  text-decoration: underline;
+}
 footer{
   text-align:center;
   color:var(--muted);
