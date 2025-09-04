@@ -17,7 +17,6 @@
       <div class="controls">
         <input id="search" type="search" placeholder="用語検索（例: フラッシュ / ソウル / TP）" />
         <button id="toggleTheme" class="btn" title="ダーク／ライト切替">🌓</button>
-        <button id="downloadBtn" class="btn">HTMLを保存</button>
       </div>
     </header>
 
@@ -47,7 +46,7 @@
         <!-- 前提 -->
         <section id="intro" class="card">
           <h2>ーー前提ーー</h2>
-          <p class="lead">
+          <p>
             <strong>リーグオブレジェンド（LoL）</strong>は、マルチオンラインバトルアリーナ（<strong>MOBA</strong>）と呼ばれるジャンルのゲームです。
             2025年で15年間もアップデートを続けていて、約2週間に1回の頻度で環境が変化するのが特徴です。
           </p>
@@ -61,7 +60,7 @@
         <!-- ルール -->
         <section id="rules" class="card">
           <h2>ーーールールーー</h2>
-          <p class="lead">
+          <p>
             LoLの舞台は「<strong>サモナーズリフト</strong>」です。
             <strong>相手チームの「ネクサス」と呼ばれる拠点を破壊すると勝ち</strong>、逆に自分たちのネクサスが破壊されると負けとなります。
           </p>
@@ -76,7 +75,7 @@
         <!-- ロール -->
         <section id="roles" class="card">
           <h2>ロール（役割）</h2>
-          <p class="lead">
+          <p>
             各プレイヤーには試合での役割が与えられます。これを「<strong>ロール</strong>」と呼びます。
           </p>
           <div class="roles">
@@ -108,14 +107,14 @@
         <!-- 試合の流れ -->
         <section id="start" class="card">
           <h2>これを覚えれば試合は"出来る"</h2>
-          <p class="lead">
+          <p>
             まずは以下の流れを覚えましょう！
             <br><br>
             1. <strong>チャンピオン選択</strong>: チャンピオンを<strong>バン</strong>（使用禁止）し、<strong>ピック</strong>（選択）します。ルーンは「おすすめ」を参考に選び、ジャングルは<strong>スマイト</strong>というサモナースペルを必ず設定しましょう。
             <br><br>
             2. <strong>序盤の買い物</strong>: TOP、MID、ADCはショップでアイテムを買います。JGは「コンパニオン」、SUPは「ワールドアトラス」を購入します。
             <br><br>
-            3. <strong>スキルの習得</strong>: レベルが上がるとスキルを強化できます。レベル6、11、18でアルティメットスキル（R）が強化されます。
+            3. <strong>スキルの習得</strong>: 経験値を獲得してレベルを上げるとスキルを強化できます。レベル6、11、18でアルティメットスキル（R）が強化されます。
             <br><br>
             4. <strong>最初の目標</strong>: 3キル、タワー破壊、エピックモンスターを3体倒すと「<strong>力の偉業</strong>」という永続バフを得られます。これが勝率7割を超えると言われる重要な目標です。
           </p>
@@ -126,27 +125,29 @@
         <!-- 勝つための知識 -->
         <section id="knowledge" class="card">
           <h2>LoLを勝つうえで欲しい知識</h2>
-          <p class="lead">
+          <p>
             プロの試合では、次のような難しい会話が日常的に交わされています。
           </p>
-          <p class="muted">
+          <p>
+            <span class="muted">
             TOP「チョガスNOTP,TOPTP差あるから相手プッシュする前に3ドラタッチしたい。」<br>
             ADC「了解、なら俺このウェーブクリアしたらIE生えるから一旦リコールして赤バフ拾いたい、先に視界取ってキャッチしよう」<br>
             JG「相手AP濃いからMR積みたい、MIDが阻害買ってくれたら助かる、TOP寄れるなら先頭にSUPとワード置きに行こう、俺ピンクワードあるし、ドラピットに置きたい」
+            </span>
           </p>
-          <p class="lead">
+          <p>
             最初はすべてを理解するのは無理なので、以下の知識を少しずつ覚えていきましょう。
           </p>
           <ul>
-            <li>サモナースペル</li>
-            <li>CC（行動妨害）</li>
-            <li>アイテム / ステータス</li>
-            <li>ルーン / ビルド</li>
-            <li>エピックモンスター</li>
-            <li>視界（ワード）</li>
-            <li>ミニオンとウェーブ</li>
-            <li>賞金とタワー</li>
-            <li>コミュニケーション</li>
+            <li><a href="#spells">サモナースペル</a></li>
+            <li><a href="#cc">CC（行動妨害）</a></li>
+            <li><a href="#items">アイテム / ステータス</a></li>
+            <li><a href="#runes">ルーン / ビルド</a></li>
+            <li><a href="#epics">エピックモンスター</a></li>
+            <li><a href="#vision">視界（ワード）</a></li>
+            <li><a href="#minions">ミニオンとウェーブ</a></li>
+            <li><a href="#towers">賞金とタワー</a></li>
+            <li><a href="#comm">コミュニケーション</a></li>
           </ul>
         </section>
 
@@ -155,7 +156,7 @@
         <!-- サモナースペル -->
         <section id="spells" class="card">
           <h2>サモナースペル</h2>
-          <p class="lead">
+          <p>
             チャンピオンのスキル（QWER）とは別に、プレイヤー自身が持つ特殊なスキルが「<strong>サモナースペル</strong>」です。
           </p>
           <ul>
@@ -176,23 +177,26 @@
         <!-- CC -->
         <section id="cc" class="card">
           <h2>CC（行動妨害）</h2>
-          <p class="lead">
+          <p>
             「<strong>クラウドコントロール</strong>」の略で、敵の行動を妨害するスキルの総称です。
-          </p>
-          <details>
-            <summary>代表的なCCの種類</summary>
-            <div>
-              <p><strong>ノックアップ</strong>: 敵を空中に打ち上げ、何もできなくさせます。解除不可能な<strong>最強のCC</strong>です。</p>
-              <p><strong>スタン</strong>: 一定時間、敵の行動を完全に停止させます。</p>
-              <p><strong>スロウ</strong>: 敵の移動速度を低下させます。</p>
-              <p><strong>サイレンス</strong>: スキルとアイテムの使用を封じます。</p>
-              <p><strong>スネア</strong>: 敵の移動を封じますが、攻撃やスキルは使用できます。</p>
-              <p><strong>タウント</strong>: 敵に強制的に自分を通常攻撃させます。</p>
-              <p><strong>フィアー（逃走）</strong>: 敵が自分から離れていくようにします。</p>
-              <p><strong>サプレッション</strong>: 一切の行動を封じる、解除不可能なCCです。</p>
-              <p><strong>ポリモーフ</strong>: 敵を弱い状態に変身させます。サイレンス、スロウ、通常攻撃不可の効果があります。</p>
-            </div>
-          </details>
+            </p>
+            <p><strong>代表的なCCの種類</strong></p>
+            <ul>
+              <li><strong>ノックアップ</strong>: 敵を空中に打ち上げ、何もできなくさせます。解除不可能な<strong>最強のCC</strong>です。</li>
+              <li><strong>スタン</strong>: 一定時間、敵の行動を完全に停止させます。</li>
+              <li><strong>スロウ</strong>: 敵の移動速度を低下させます。</li>
+              <li><strong>サイレンス</strong>: スキルとアイテムの使用を封じます。</li>
+              <li><strong>スネア</strong>: 敵の移動を封じますが、攻撃やスキルは使用できます。</li>
+              <li><strong>タウント</strong>: 敵に強制的に自分を通常攻撃させます。</li>
+              <li><strong>チャーム</strong>: 敵がゆっくりと自分に近づいてくるようにします。</li>
+              <li><strong>フィアー（逃走）</strong>: 敵が自分から離れていくようにします。</li>
+              <li><strong>サプレッション</strong>: 一切の行動を封じる、解除不可能なCCです。</li>
+              <li><strong>釘付け</strong>: 移動スキルが使えなくなります。</li>
+              <li><strong>停止</strong>: 一定時間、対象の時間を止めます。</li>
+              <li><strong>ポリモーフ</strong>: 敵を弱い状態に変身させます。サイレンス、スロウ、通常攻撃不可の効果があります。</li>
+              <li><strong>ブラインド</strong>: 敵の通常攻撃を一定時間外れさせます。</li>
+              <li><strong>サスペンション</strong>: ノックアップに似ていますが、解除が可能な行動妨害です。</li>
+            </ul>
         </section>
 
         <hr>
@@ -200,21 +204,21 @@
         <!-- アイテム / ステータス -->
         <section id="items" class="card">
           <h2>アイテム / ステータス</h2>
-          <p class="lead">
+          <p>
             戦闘中に手に入れた<strong>ゴールド</strong>を使って、様々な<strong>アイテム</strong>を購入できます。
-            素材となるアイテムから完成アイテムへと買い進めていきましょう。
+            素材となるアイテムを組み合わせて完成アイテムを作成します。アイテムは売却できますが、購入価格の7割のゴールドしか戻ってきません。
           </p>
-          <p class="lead">
+          <p>
             アイテムによって、チャンピオンの様々な<strong>ステータス</strong>が上がります。
           </p>
           <ul>
-            <li><strong>AD（アタックダメージ）</strong>: 通常攻撃や物理ダメージの量を増やす。</li>
-            <li><strong>AR（アーマー）</strong>: 物理ダメージを軽減する。</li>
-            <li><strong>AP（アビリティパワー）</strong>: 魔法ダメージの量を増やす。</li>
-            <li><strong>MR（マジックレジスト）</strong>: 魔法ダメージを軽減する。</li>
-            <li><strong>AS（アタックスピード）</strong>: 通常攻撃の速度。</li>
-            <li><strong>MS（ムーブメントスピード）</strong>: 移動速度。</li>
-            <li><strong>スキルヘイスト</strong>: スキルのクールダウン時間を短縮する。</li>
+            <li><strong>AD（アタックダメージ）</strong>: 通常攻撃や物理ダメージの量を増やすステータスです。</li>
+            <li><strong>AR（アーマー）</strong>: 物理ダメージを軽減します。</li>
+            <li><strong>AP（アビリティパワー）</strong>: 魔法ダメージの量を増やすステータスです。</li>
+            <li><strong>MR（マジックレジスト）</strong>: 魔法ダメージを軽減します。</li>
+            <li><strong>AS（アタックスピード）</strong>: 通常攻撃の速度です。</li>
+            <li><strong>MS（ムーブメントスピード）</strong>: 移動速度です。ブーツは必須アイテムです。</li>
+            <li><strong>スキルヘイスト</strong>: スキルのクールダウン時間を短縮します。</li>
           </ul>
         </section>
 
@@ -223,7 +227,7 @@
         <!-- ルーン -->
         <section id="runes" class="card">
           <h2>ルーン</h2>
-          <p class="lead">
+          <p>
             試合開始前に設定する、チャンピオンの成長を決定するシステムです。
             「<strong>キーストーン</strong>」と呼ばれるメインのルーンと、「<strong>サブルーン</strong>」「<strong>シャード</strong>」を組み合わせてカスタマイズします。
             最初は「OP.GG」などのサイトで、おすすめのビルドを参考にしましょう。
@@ -235,18 +239,16 @@
         <!-- エピックモンスター -->
         <section id="epics" class="card">
           <h2>エピックモンスター</h2>
-          <p class="lead">
+          <p>
             <strong>ドラゴン</strong>、<strong>ヘラルド</strong>、<strong>バロン</strong>などの強力な中立モンスターです。
             これらを倒すと、チーム全体に有利な「<strong>バフ</strong>」を得ることができます。
           </p>
-          <details>
-            <summary>バフの例</summary>
-            <div>
-              <p><strong>ドラゴン</strong>: 4体倒すと「<strong>ドラゴンソウル</strong>」という強力な永続バフを得られる。勝率が80%になると言われるほど強力。</p>
-              <p><strong>ヘラルド</strong>: 討伐するとアイテムを召喚し、タワーに大ダメージを与えられる。</p>
-              <p><strong>バロン</strong>: 討伐するとミニオンを大幅に強化するバフを得られる。非常に強力なため、試合の終盤を動かす重要なオブジェクト。</p>
-            </div>
-          </details>
+          <p><strong>バフの例</strong></p>
+          <ul>
+              <li><strong>ドラゴン</strong>: 4体倒すと「<strong>ドラゴンソウル</strong>」という強力な永続バフを得られる。勝率が80%になると言われるほど強力。</li>
+              <li><strong>ヘラルド</strong>: 討伐するとアイテムを召喚し、タワーに大ダメージを与えられる。</li>
+              <li><strong>バロン</strong>: 討伐するとミニオンを大幅に強化するバフを得られる。非常に強力なため、試合の終盤を動かす重要なオブジェクト。</li>
+          </ul>
         </section>
 
         <hr>
@@ -254,13 +256,13 @@
         <!-- 視界（ワード） -->
         <section id="vision" class="card">
           <h2>視界（ワード）</h2>
-          <p class="lead">
+          <p>
             マップのほとんどは「霧」に覆われていて、<strong>視界</strong>がないと敵やオブジェクトの位置を把握できません。
             「<strong>ワード</strong>」を置くことで、見えない場所に視界を確保できます。
           </p>
           <ul>
             <li><strong>ステルスワード</strong>: 2秒後に見えなくなるワードで、3本まで設置可能です。</li>
-            <li><strong>コントロールワード</strong>: 75ゴールドで購入でき、周囲の敵ワードやトラップを無効化できます。非常に重要。</li>
+            <li><strong>コントロールワード</strong>: 75ゴールドで購入でき、周囲の敵ワードやトラップを無効化できます。一人1つしか持てませんが、非常に重要です。</li>
             <li><strong>オラクルレンズ</strong>: 使用すると周囲の隠されたワードや透明な敵を見つけられます。</li>
           </ul>
         </section>
@@ -270,7 +272,7 @@
         <!-- ミニオン / ウェーブ -->
         <section id="minions" class="card">
           <h2>ミニオン / ウェーブ</h2>
-          <p class="lead">
+          <p>
             試合中に自動で出現する味方キャラクターを「<strong>ミニオン</strong>」と呼びます。
           </p>
           <p>
@@ -286,7 +288,7 @@
         <!-- タワー -->
         <section id="towers" class="card">
           <h2>タワー</h2>
-          <p class="lead">
+          <p>
             敵のタワーを破壊すると、チーム全員にゴールドが入ります。
             <br>
             敵のネクサスに向かうにつれて、<strong>アウタータワー</strong>、<strong>インナータワー</strong>、<strong>インヒビタータワー</strong>、<strong>ネクサスタワー</strong>と段階的にタワーを破壊していく必要があります。
@@ -301,7 +303,7 @@
         <!-- コミュニケーション -->
         <section id="comm" class="card">
           <h2>コミュニケーション</h2>
-          <p class="lead">
+          <p>
             チャット以外にも「<strong>ピン</strong>」を使って味方に情報を伝えられます。
           </p>
           <p>

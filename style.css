@@ -95,7 +95,6 @@ nav .toc a:hover{
   padding:24px;
 }
 .lead{
-  color:var(--muted);
   white-space:pre-wrap;
   margin-bottom: 1rem;
 }
@@ -110,16 +109,6 @@ nav .toc a:hover{
   padding:12px;
   border:1px solid rgba(2,6,23,0.04);
   background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);
-}
-details{
-  margin:1rem 0;
-  padding:12px;
-  border-radius:8px;
-  background:var(--bg);
-}
-summary{
-  cursor:pointer;
-  font-weight:700;
 }
 ul{
   margin:8px 0 12px 20px;
