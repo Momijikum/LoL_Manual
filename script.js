@@ -9,3 +9,16 @@ search.addEventListener('input', ()=>{
   const areas = document.querySelectorAll('.content .card p, .content .card li, .role');
   areas.forEach(el=>{el.innerHTML = el.textContent.replace(re, s => `<mark>${s}</mark>`)});
 });
+
+// --- スクロールアニメーション ---
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.content .card').forEach(card => {
+  observer.observe(card);
+});
