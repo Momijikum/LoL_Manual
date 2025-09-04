@@ -45,6 +45,7 @@ h2{
   margin-top: 0;
 }
 .subtitle{
+  color:var(--muted);
   font-size:14px;
 }
 .controls{
@@ -107,7 +108,7 @@ nav .toc a:hover{
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1rem auto;
+  margin: 1rem 0;
   border-radius: 8px;
 }
 .content-img-small {
@@ -133,18 +134,12 @@ nav .toc a:hover{
 .role img {
   width: 50px;
   height: 50px;
-  margin: 0.5rem auto;
-  display: block;
+  margin: 0.5rem 0;
 }
 ul{
   margin:8px 0 12px 20px;
 }
-ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-ul li img {
+ul img {
   width: 40px;
   height: 40px;
   vertical-align: middle;
@@ -176,7 +171,6 @@ mark{
   text-underline-offset: 4px;
   cursor: help;
   color: var(--accent);
-  position: relative;
 }
 .tooltip-trigger:hover::after {
   content: attr(title);
