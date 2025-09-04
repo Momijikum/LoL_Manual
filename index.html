@@ -1,107 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoL初心者向けガイド</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoL（League of Legends）入門ガイド</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container" id="app">
+    <header>
+      <div aria-hidden class="logo">LoL</div>
+      <div>
+        <h1>LoL（League of Legends）入門ガイド</h1>
+        <div class="subtitle">初心者向けに要点だけやさしくまとめたワンページガイド</div>
+      </div>
+      <div class="controls">
+        <input id="search" type="search" placeholder="用語検索（例: フラッシュ / ソウル / TP）" />
+        <button id="toggleTheme" class="btn" title="ダーク／ライト切替">🌓</button>
+        <button id="downloadBtn" class="btn">HTMLを保存</button>
+      </div>
+    </header>
 
-<header>
-    <h1>青くんへのLoL初心者向けガイド</h1>
-</header>
+    <div class="grid">
+      <nav class="card" aria-label="目次">
+        <div class="toc-title">目次</div>
+        <div class="toc">
+          <a href="#intro">前提</a>
+          <a href="#rules">ルール / 基本の流れ</a>
+          <a href="#roles">ロール（役割）</a>
+          <a href="#start">試合の流れ</a>
+          <a href="#knowledge">勝つための知識</a>
+          <a href="#spells">サモナースペル</a>
+          <a href="#cc">CC（行動妨害）</a>
+          <a href="#items">アイテム / ステータス</a>
+          <a href="#runes">ルーン</a>
+          <a href="#epics">エピックモンスター</a>
+          <a href="#vision">視界（ワード）</a>
+          <a href="#minions">ミニオン / ウェーブ</a>
+          <a href="#towers">タワー</a>
+          <a href="#comm">コミュニケーション</a>
+        </div>
+      </nav>
 
-<div class="container">
-    <nav class="toc">
-        <h2>目次</h2>
-        <ul>
-            <li><a href="#about">LoLとは</a></li>
-            <li><a href="#rules">ルール</a></li>
-            <li><a href="#roles">ロール</a></li>
-            <li><a href="#game-flow">試合の流れ</a></li>
-            <li><a href="#knowledge">覚えておきたい知識</a></li>
-        </ul>
-    </nav>
+      <main class="content">
 
-    <main>
-        <section id="about" class="card">
-            <h2>LoLってどんなゲーム？</h2>
-            <p>リーグオブレジェンド（<span class="important">LoL</span>）は、マルチプレイヤー・オンライン・バトル・アリーナ（MOBA）のゲームです。</p>
-            <p>約170体のチャンピオンと、それぞれのスキル・ストーリーが魅力です。毎試合が異なるため戦略とプレイスキルの両方が重要です。</p>
+        <!-- 前提 -->
+        <section id="intro" class="card">
+          <h2>ーー前提ーー</h2>
+          <p class="lead">
+リーグオブレジェンド LoL<br>
+マルチ オンライン バトル アリーナ (MOBA)<br><br>
+2025 15年間アップデートは2週間に1回。環境が頻繁に変化。運営の調整は適当で公式も「強くしすぎた」と発言。現在MAPはノクサスMAP。<br><br>
+LoLの楽しさ: 170体のキャラクター、最低5つのスキル、各キャラクターにストーリー。同じ試合は一つもない。<br>
+プレイスキルと戦術のバランス。
+          </p>
         </section>
 
+        <!-- ルール -->
         <section id="rules" class="card">
-            <h2>ルール</h2>
-            <p>舞台は<span class="important">サモナーズリフト</span>。基本は<span class="important">ネクサス</span>を破壊した方の勝利です。</p>
-            <ul>
-                <li>ネクサス → タワー → インヒビター → タワー → タワー → 勝利</li>
-                <li>必要なもの：<span class="important">金</span>・<span class="important">経験</span>・<span class="important">バフ</span></li>
-            </ul>
+          <h2>ーーールールーー</h2>
+          <p class="lead">
+サモナーズリフトが舞台。ネクサスを破壊したら勝ち。ミニオンが沸く。<br>
+ネクサス→タワー→インヒビター→タワー→タワー→あなた。<br>
+必要な物: 金・経験・バフ。<br>
+バフ: エピックモンスター（ドラゴン、アタカン、ヘラルドなど）。
+          </p>
         </section>
 
+        <!-- ロール -->
         <section id="roles" class="card">
-            <h2>ロール</h2>
-            <ul>
-                <li><span class="role">TOP</span>: タイマン担当、一人で試合を破壊も可能</li>
-                <li><span class="role">JG</span>: 森にいて全レーンに関与、難易度高め</li>
-                <li><span class="role">MID</span>: 影響力が高い花形レーン</li>
-                <li><span class="role">ADC</span>: DPS火力担当、狙われやすい</li>
-                <li><span class="role">SUP</span>: サポート、味方を守る</li>
-            </ul>
+          <h2>ロール（役割）</h2>
+          <div class="roles">
+            <div class="role"><strong>TOP</strong><p>1v1担当。チームを守るタンクや最前線。PS重視。</p></div>
+            <div class="role"><strong>JG</strong><p>森で育つ。全レーンに関与。1v2作成、マクロ重視。</p></div>
+            <div class="role"><strong>MID</strong><p>花形レーン。理不尽を押し付ける/受ける。影響力大。</p></div>
+            <div class="role"><strong>ADC</strong><p>遠距離DPS。火力特化。PS重視。</p></div>
+            <div class="role"><strong>SUP</strong><p>ADCをサポート。視界管理、回復、行動妨害。マクロ重視。</p></div>
+          </div>
         </section>
 
-        <section id="game-flow" class="card">
-            <h2>試合の流れ</h2>
-            <ol>
-                <li>チャンピオンをバン</li>
-                <li>チャンピオンをピック</li>
-                <li>ルーン設定</li>
-                <li>サモナースペル設定</li>
-            </ol>
-            <p>スキルはクリックまたはCtrl + スキルでレベルアップ。6, 11, 18でRスキル強化。</p>
+        <!-- 試合の流れ -->
+        <section id="start" class="card">
+          <h2>これを覚えれば試合は"出来る"</h2>
+          <p class="lead">
+チャンピオンをバン・ピック。ルーンを選択（データ推奨）。サモナースペルを設定。JGはスマイト。<br>
+チャットの9割は無意味。<br>
+スキル使用でレベルが上がり、6,11,18でRが上がる。<br>
+初期目標: 3キル、タワー破壊、エピックモンスター3体討伐で永続バフ。
+          </p>
         </section>
 
+        <!-- 勝つための知識 -->
         <section id="knowledge" class="card">
-            <h2>覚えておきたい知識</h2>
-            <div class="collapsible-group">
-                <button class="collapsible-btn">サモナースペル</button>
-                <div class="content">
-                    <ul>
-                        <li><span class="important">フラッシュ</span>: 壁を越えたり逃げ攻めに使用</li>
-                        <li><span class="important">スマイト</span>: モンスターに大ダメージ、JG専用</li>
-                    </ul>
-                </div>
-
-                <button class="collapsible-btn">CC（群衆制御）</button>
-                <div class="content">
-                    <ul>
-                        <li>ノックアップ: 浮かされ何もできない</li>
-                        <li>スロウ: 足が遅くなる</li>
-                    </ul>
-                </div>
-
-                <button class="collapsible-btn">アイテム</button>
-                <div class="content">
-                    <p>ステータスを上げたり特殊効果を得られます。素材から買いましょう。金色の枠のアイテムは特に注意。</p>
-                </div>
-
-                <button class="collapsible-btn">ルーン</button>
-                <div class="content">
-                    <ul>
-                        <li>キーストーン例：電撃、エアリー、魂の収穫、ファーストストライク</li>
-                    </ul>
-                </div>
-            </div>
+          <h2>LoLを勝つうえで欲しい知識</h2>
+          <ul>
+            <li>サモナースペル</li>
+            <li>CC（行動妨害）</li>
+            <li>アイテム / ステータス</li>
+            <li>ルーン / ビルド</li>
+            <li>エピックモンスター</li>
+            <li>視界（ワード）</li>
+            <li>ミニオンとウェーブ</li>
+            <li>賞金とタワー</li>
+            <li>コミュニケーション</li>
+          </ul>
+          <p class="lead">少しずつ覚えよう。</p>
         </section>
-    </main>
-</div>
 
-<footer>
-    <p>&copy; 2025 LoL初心者向けガイド</p>
-</footer>
+        <!-- サモナースペル -->
+        <section id="spells" class="card">
+          <h2>サモナースペル</h2>
+          <ul>
+            <li>フラッシュ: 最強、壁を抜ける、逃げにも攻めにも。300sに一回</li>
+            <li>テレポート: ミニオン・ユニット・ワード・タワーに移動。14mから早くなる</li>
+            <li>スマイト: モンスターに600/900/1200ダメージ。JG用</li>
+            <li>イグナイト: 継続ダメージ＋回復阻害</li>
+            <li>ゴースト: 足速くなる、ユニットに当たらない</li>
+            <li>バリア: 2.5sシールド</li>
+            <li>ヒール: 回復＋少し足速</li>
+            <li>イグゾースト: 2.5s 足遅くする＋ダメージ低下</li>
+            <li>クレンズ: サプレッションとノックアップ以外解除</li>
+          </ul>
+        </section>
 
-<script src="script.js"></script>
+        <!-- CC -->
+        <section id="cc" class="card">
+          <h2>CC（行動妨害）</h2>
+          <p class="lead">ノックアップ、スロウ、スタン、サイレンス、スネア、チャーム、タウント、フィアー、スリープ、釘付け、停止、ポリモーフ、ブラインド、サスペンション、バーサーク</p>
+        </section>
+
+        <!-- アイテム / ステータス -->
+        <section id="items" class="card">
+          <h2>アイテム / ステータス</h2>
+          <p class="lead">
+AD, AR, AS, クリティカル率, AP, MR, スキルヘイスト, MS など。<br>
+素材を買って完成させる。アイテムは売れるが7割使用。効果を読む。
+          </p>
+        </section>
+
+        <!-- ルーン -->
+        <section id="runes" class="card">
+          <h2>ルーン</h2>
+          <p class="lead">キーストーン・サブルーン・シャードを組み合わせてキャラの成長を決定。</p>
+        </section>
+
+        <!-- エピックモンスター -->
+        <section id="epics" class="card">
+          <h2>エピックモンスター</h2>
+          <p class="lead">
+ドラゴン、ヘラルド、バロンなど。討伐するとバフを得る。MAPや順番は変化。
+          </p>
+        </section>
+
+        <!-- 視界（ワード） -->
+        <section id="vision" class="card">
+          <h2>視界（ワード）</h2>
+          <p class="lead">
+戦場は霧に包まれる。ワードを置いて視界確保。ステルスワード、オラクルレンズ、コントロールワードなど。
+          </p>
+        </section>
+
+        <!-- ミニオン / ウェーブ -->
+        <section id="minions" class="card">
+          <h2>ミニオン / ウェーブ</h2>
+          <p class="lead">
+CS管理、ミニオンウェーブ、プルウェーブ・プッシュウェーブ、フリーズの方法。
+          </p>
+        </section>
+
+        <!-- タワー -->
+        <section id="towers" class="card">
+          <h2>タワー</h2>
+          <p class="lead">
+アウタータワー・インナータワー・インヒビタータワー・ネクサスタワーの構造と報酬。タワープレートの仕組み。インヒビター破壊でスーパーミニオン出現。
+          </p>
+        </section>
+
+        <!-- コミュニケーション -->
+        <section id="comm" class="card">
+          <h2>コミュニケーション</h2>
+          <p class="lead">
+ピン: Gキー＋ドラッグ。ミアピン、GOピン、救助ピン、バックピン、危険ピン、匿名ピンなど。TABでバフ・敵情報確認。
+          </p>
+        </section>
+
+        <footer class="card">
+          <div class="small">ドラフト版 → 完成版へ反映しました。</div>
+        </footer>
+      </main>
+    </div>
+
+    <footer>LoL入門ガイド — Generated</footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
