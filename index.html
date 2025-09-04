@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LoL（League of Legends）入門ガイド</title>
+  <title>青くん用LoL入門ガイド</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,7 @@
         <div class="subtitle">初心者向けに要点だけやさしくまとめました</div>
       </div>
       <div class="controls">
-        <input id="search" type="search" placeholder="用語検索（例: フラッシュ / ソウル / TP）" />
-        <button id="toggleTheme" class="btn" title="ダーク／ライト切替">🌓</button>
+        <input id="search" type="search" placeholder="協調表示されます" />
       </div>
     </header>
 
@@ -51,12 +50,10 @@
             2025年現在、15年間もアップデートを続けていて、<strong>約2週間に1回</strong>の頻度で環境が変化するのが特徴です。
           </p>
           <p>
-            <strong>LoLの楽しさ</strong>は、<a href="https://www.leagueoflegends.com/ja-jp/champions/" target="_blank">170体以上の個性豊かなキャラクター</a>と、最低5つのスキル、100を超えるアイテム、その組み合わせによる無限の戦術にあります。同じ試合は一つとしてなく、<strong><span title="ミクロ">プレイヤースキル</span></strong>と<strong><span title="マクロ">戦略</span></strong>のバランスが勝利のカギを握ります。
+            <strong>LoLの楽しさ</strong>は、<a href="https://www.leagueoflegends.com/ja-jp/champions/" target="_blank">170体以上の個性豊かなキャラクター</a>と、最低5つのスキル、100を超えるアイテム、その組み合わせによる無限の戦術にあります。同じ試合は一つとしてなく、<a class="tooltip-trigger" title="ミクロ"><strong>プレイヤースキル</strong></a>と<a class="tooltip-trigger" title="マクロ"><strong>戦略</strong></a>のバランスが勝利のカギを握ります。
           </p>
-          <p>
-            <span class="muted">
-                各キャラクターにはストーリー、バックグラウンド、他のキャラとの関係があります。
-            </span>
+          <p class="muted">
+            各キャラクターにはストーリー、バックグラウンド、他のキャラとの関係があります。
           </p>
         </section>
 
@@ -72,14 +69,12 @@
           <p>
             ネクサスを破壊するには、レーン上にある<strong>タワー×3</strong>、<strong>インヒビター</strong>、そしてまた<strong>タワー</strong>を破壊したうえで<strong>ネクサス</strong>まで到達します。
           </p>
-          <p>
-            <span class="muted">
-                ネクサスを壊したい、タワーを折りたい→ミニオンをタワーに押したい→相手をどかしたい→相手より強くなりたい。
-            </span>
+          <p class="muted">
+            ネクサスを壊したい、タワーを折りたい→ミニオンをタワーに押したい→相手をどかしたい→相手より強くなりたい。
           </p>
           <p>
-            必要な物３個
-            <strong>金・経験・バフ</strong>
+            必要な物３個<br>
+            <strong>金・経験・バフ</strong><br>
             お金→LoLで買い物をする。アイテムはあほらしいぐらい強い<br>
             タワーを折る、敵を倒す、ミニオンにとどめを刺す(CS)。ずーーっとミニオンで稼ぐ、経験値も手に入る！<br>
             バフとは、エピックモンスターと呼ばれる物<br>
@@ -99,27 +94,27 @@
             <div class="role">
               <strong>TOP</strong>
               <p>タイマンをはる、一人で試合を破壊することもできる、チームを守るタンクになることも</p>
-              <p><span class="muted">緊張感があって駆け引きが出来る、チームの最前線。PS重視</span></p>
+              <p class="muted">緊張感があって駆け引きが出来る、チームの最前線。PS重視</p>
             </div>
             <div class="role">
               <strong>JG（ジャングル）</strong>
               <p>最も難しく、ミニオンを倒さずに森の中にいる、すべてのレーンに関与し1v2を作る。誰かを助ける、誰かを捨てるを選ぶ必要があり謝らないメンタルが大切</p>
-            　<p><span class="muted">全てのレーン、キャラクターの知識が必要。自分の力でゲームが決まる、JGGAP。マクロ重視</span></p>
+              <p class="muted">全てのレーン、キャラクターの知識が必要。自分の力でゲームが決まる、JGGAP。マクロ重視</p>
             </div>
             <div class="role">
               <strong>MID</strong>
               <p>花形レーン　影響力が高い、メイジ、アサシン、居酒屋までいろいろなチャンピョンがいる。</p>
-              <p><span class="muted">理不尽を押し付け、理不尽を押し付けられる。ミクロマクロどちらも重要</span></p>
+              <p class="muted">理不尽を押し付け、理不尽を押し付けられる。ミクロマクロどちらも重要</p>
             </div>
             <div class="role">
               <strong>ADC</strong>
               <p>最もDPSがでる火力担当、銃とか弓とか、遠距離で戦う。</p>
-              <p><span class="muted">火力に全ぶりなのでよわっちい、ゆえに狙われる、PS重視</span></p>
+              <p class="muted">火力に全ぶりなのでよわっちい、ゆえに狙われる、PS重視</p>
             </div>
             <div class="role">
               <strong>SUP（サポート）</strong>
               <p>唯一お金を稼がない、お金は全部ADCに無償の愛を味方に、ずっとADCの横にいる。</p>
-              <p><span class="muted">ヒール、行動妨害、バリア、SUPがADCを育てるママ、他のレーンも助ける。マクロ重視</span></p>
+              <p class="muted">ヒール、行動妨害、バリア、SUPがADCを育てるママ、他のレーンも助ける。マクロ重視</p>
             </div>
           </div>
         </section>
@@ -130,14 +125,14 @@
         <section id="start" class="card">
           <h2>これを覚えれば試合は"出来る"</h2>
           <p>
-            まずは以下の流れを覚えましょう！
-            <br><br>
-            1. <strong>チャンピオン選択</strong>: チャンピオンを<strong>バン</strong>（使用禁止）し、<strong>ピック</strong>（選択）します。ルーンは「おすすめ」を参考に選び、ジャングルは<strong>スマイト</strong>というサモナースペルを必ず設定しましょう。
-            <br><br>
-            2. <strong>序盤の買い物</strong>: TOP、MID、ADCはショップでアイテムを買います。JGは「コンパニオン」、SUPは「ワールドアトラス」を購入します。
-            <br><br>
-            3. <strong>スキルの習得</strong>: 経験値を獲得してレベルを上げるとスキルを強化できます。レベル6、11、18でアルティメットスキル（R）が強化できます。
-            <br><br>
+            まずは以下の流れを覚えましょう！<br>
+            <br>
+            1. <strong>チャンピオン選択</strong>: チャンピオンを<strong>バン</strong>（使用禁止）し、<strong>ピック</strong>（選択）します。ルーンは「おすすめ」を参考に選び、ジャングルは<strong>スマイト</strong>というサモナースペルを必ず設定しましょう。<br>
+            <br>
+            2. <strong>序盤の買い物</strong>: TOP、MID、ADCはショップでアイテムを買います。JGは「コンパニオン」、SUPは「ワールドアトラス」を購入します。<br>
+            <br>
+            3. <strong>スキルの習得</strong>: 経験値を獲得してレベルを上げるとスキルを強化できます。レベル6、11、18でアルティメットスキル（R）が強化できます。<br>
+            <br>
             4. <strong>最初の目標</strong>: 3キル、タワー破壊、エピックモンスターを3体倒すのいずれか<strong>2つ</strong>を達成すると「<strong>力の偉業</strong>」という永続バフを得られます。これが勝率7割を超えると言われる重要な目標です。
           </p>
         </section>
@@ -150,8 +145,7 @@
           <p>
             試合では、次のような会話が交わされています。
           </p>
-          <p>
-            <span class="muted">
+          <p class="muted">
             TOP「チョガスNOTP,TOPTP差あるから相手プッシュする前に3ドラタッチしたい。」<br>
             ADC「了解、なら俺このウェーブクリアしたらIE生えるから一旦リコールして赤バフ拾いたい、先に視界取ってキャッチしよう」<br>
             JG「相手AP濃いからMR積みたい、MIDが阻害買ってくれたら助かる、TOP寄れるなら先頭にSUPとワード置きに行こう、俺ピンクワードあるし、ドラピットに置きたい」<br>
@@ -159,7 +153,6 @@
             SUP「mid 25:00 adc 24:55 noF」<br>
             <br>
             LoLプレイヤーは意味わかります、マジで。
-            </span>
           </p>
           <p>
             最初はすべてを理解するのは無理なので、以下の知識を少しずつ覚えていきましょう。
@@ -189,7 +182,7 @@
             <li><strong>フラッシュ</strong>: 300秒ごとに1回使える<strong>最強のスペル</strong>。壁を越えたり、逃げにも攻めにも使えます。</li>
             <li><strong>テレポート</strong>: ミニオン、ユニット、ワード、タワーに移動できます。試合開始から14分後にはクールダウンが短縮されます。</li>
             <li><strong>スマイト</strong>: ジャングル専用のスペルで、モンスターに600/900/1200の確定ダメージを与えます。</li>
-            <li><strong>イグナイト</strong>: 敵に継続ダメージと<strong><span title="回復阻害効果">重症</span></strong>を与えます。</li>
+            <li><strong>イグナイト</strong>: 敵に継続ダメージと<a class="tooltip-trigger" title="回復阻害効果"><strong>重症</strong></a>を与えます。</li>
             <li><strong>ゴースト</strong>: 一定時間移動速度が上昇し、ユニットをすり抜けられるようになります。</li>
             <li><strong>バリア</strong>: 2.5秒間シールドを獲得します。</li>
             <li><strong>ヒール</strong>: 自身と近くの味方を回復させ、少しだけ移動速度が上がります。</li>
@@ -206,24 +199,24 @@
           <p>
             「<strong>クラウドコントロール</strong>」の略で、敵の行動を妨害するスキルの総称です。<br>
             <span class="muted">体力バーの上に表示されます</span>
-            </p>
-            <p><strong>CCの種類</strong></p>
-            <ul>
-              <li><strong>ノックアップ</strong>: 浮き上がって何もできなくなる、耐性も解除できない最強のCC</li>
-              <li><strong>スタン</strong>: 一定時間、敵の行動を完全に停止させます。</li>
-              <li><strong>スロウ</strong>: 足が遅くなる、2つ以上のス老がかかった場合は効果が高い方が適応。</li>
-              <li><strong>サイレンス</strong>: スキルとアイテムの使用を封じます。</li>
-              <li><strong>スネア</strong>: 敵の移動を封じますが、攻撃やスキルは使用できます。</li>
-              <li><strong>タウント</strong>: 敵に強制的に自分を<strong><span title="通常攻撃">AA</span></strong>させます。</li>
-              <li><strong>チャーム</strong>: 敵がゆっくりと自分に近づいてくるようにします。</li>
-              <li><strong>フィアー（逃走）</strong>: 敵が自分から離れていくようにします。</li>
-              <li><strong>サプレッション</strong>: 一切の行動を封じる、解除不可能なCCです。</li>
-              <li><strong>釘付け</strong>: 移動スキルが使えなくなります。</li>
-              <li><strong>停止</strong>: 一定時間、対象の時間を止めます。</li>
-              <li><strong>ポリモーフ</strong>: 敵を弱い状態に変身させます。サイレンス、スロウ、通常攻撃不可の効果があります。</li>
-              <li><strong>ブラインド</strong>: 敵の通常攻撃を一定時間外れさせます。</li>
-              <li><strong>サスペンション</strong>: ノックアップに似ていますが、解除が可能な行動妨害です。</li>
-            </ul>
+          </p>
+          <p><strong>CCの種類</strong></p>
+          <ul>
+            <li><strong>ノックアップ</strong>: 浮き上がって何もできなくなる、耐性も解除できない最強のCC</li>
+            <li><strong>スタン</strong>: 一定時間、敵の行動を完全に停止させます。</li>
+            <li><strong>スロウ</strong>: 足が遅くなる、2つ以上のス老がかかった場合は効果が高い方が適応。</li>
+            <li><strong>サイレンス</strong>: スキルとアイテムの使用を封じます。</li>
+            <li><strong>スネア</strong>: 敵の移動を封じますが、攻撃やスキルは使用できます。</li>
+            <li><strong>タウント</strong>: 敵に強制的に自分を<a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>させます。</li>
+            <li><strong>チャーム</strong>: 敵がゆっくりと自分に近づいてくるようにします。</li>
+            <li><strong>フィアー（逃走）</strong>: 敵が自分から離れていくようにします。</li>
+            <li><strong>サプレッション</strong>: 一切の行動を封じる、解除不可能なCCです。</li>
+            <li><strong>釘付け</strong>: 移動スキルが使えなくなります。</li>
+            <li><strong>停止</strong>: 一定時間、対象の時間を止めます。</li>
+            <li><strong>ポリモーフ</strong>: 敵を弱い状態に変身させます。サイレンス、スロウ、通常攻撃不可の効果があります。</li>
+            <li><strong>ブラインド</strong>: 敵の通常攻撃を一定時間外れさせます。</li>
+            <li><strong>サスペンション</strong>: ノックアップに似ていますが、解除が可能な行動妨害です。</li>
+          </ul>
         </section>
 
         <hr>
@@ -239,7 +232,7 @@
             アイテムによって、チャンピオンの様々な<strong>ステータス</strong>が上がります。
           </p>
           <ul>
-            <li><strong>AD（アタックダメージ）</strong>: <strong><span title="通常攻撃">AA</span></strong>や物理ダメージの量を増やすステータスです。</li>
+            <li><strong>AD（アタックダメージ）</strong>: <a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>や物理ダメージの量を増やすステータスです。</li>
             <li><strong>AR（アーマー）</strong>: 物理ダメージを軽減します。</li>
             <li><strong>AP（アビリティパワー）</strong>: 魔法ダメージの量を増やすステータスです。</li>
             <li><strong>MR（マジックレジスト）</strong>: 魔法ダメージを軽減します。</li>
@@ -261,12 +254,12 @@
           </p>
           <span class="muted">フェイが使えそうなルーン</span>
           <ul>
-            <li><strong>雷撃</strong>: <strong><span title="通常攻撃">AA</span></strong>かスキルで3s以内に3っつ当てると追加ダメージ、瞬間火力が高い。</li>
+            <li><strong>雷撃</strong>: <a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>かスキルで3s以内に3っつ当てると追加ダメージ、瞬間火力が高い。</li>
             <li><strong>彗星</strong>: スキルダメージを与えると敵に飛んでいく。</li>
-            <li><strong>エアリー</strong>: <strong><span title="通常攻撃">AA</span></strong>かスキルを与えると追加ダメージ、AAでも発動する分ダメージ低め</li>
+            <li><strong>エアリー</strong>: <a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>かスキルを与えると追加ダメージ、AAでも発動する分ダメージ低め</li>
             <li><strong>魂の収穫</strong>: HPの低い敵にダメージを与えると追加ダメージ、収穫するたびにダメージが上がる。</li>
-            <li><strong>ファーストストライク</strong>: 先に攻撃すると10円もらって3秒間ダメージが上がる、3秒間のダメージの（<strong><span title="AAが近距離攻撃のキャラ">メレイ</span></strong>は50%、<strong><span title="AAが遠距離攻撃のキャラ">レンジ</span></strong>は35%）お金がもらえる。</li>
-        　</ul>
+            <li><strong>ファーストストライク</strong>: 先に攻撃すると10円もらって3秒間ダメージが上がる、3秒間のダメージの（<a class="tooltip-trigger" title="AAが近距離攻撃のキャラ"><strong>メレイ</strong></a>は50%、<a class="tooltip-trigger" title="AAが遠距離攻撃のキャラ"><strong>レンジ</strong></a>は35%）お金がもらえる。</li>
+          </ul>
         </section>
 
         <hr>
@@ -280,24 +273,24 @@
           </p>
           <p><strong>エピックモンスターの説明</strong></p>
           <ul>
-              <li><strong>ドラゴン</strong>: 4体倒すと「<strong>ドラゴンソウル</strong>」という強力な永続バフを得られる。勝率が80%になると言われるほど強力。</li>
-              <span class="muted">
-                攻撃、耐久、体力、MS、回復力、スキルヘイストなどのバフがある<br>
-                最初の２体はランダム、３体目からはずっと固定<br>
-                そして三体目の登場と同時にMAPが少し変わる<br>
-                ４体のドラゴンを倒すとドラゴンソウルというものがもらえる、超強化バフ80%勝てる<br>
-                そのあと6分後からはずっとエルダードラゴン<br>
-                効果は<strong>HP20%以下の敵に確定キルをする</strong>最強、勝ち、あほ<br>
-            　</span>
-              <li><strong>ヘラルド</strong>: 討伐するとアイテムをゲットできる、召喚するとタワーにタックルする、ヘラルドをクリックすると乗れる、気を付けて。</li>
-              <li><strong>バロン</strong>: 討伐するとミニオンを大幅に強化するバフを得られる。非常に強力なため、試合の終盤を動かす重要なオブジェクト。</li>
-              <span class="muted">ヘラルドやバロン以外討伐に関与すると、リコールが速くなる</span>
+            <li><strong>ドラゴン</strong>: 4体倒すと「<strong>ドラゴンソウル</strong>」という強力な永続バフを得られる。勝率が80%になると言われるほど強力。</li>
+            <p class="muted">
+              攻撃、耐久、体力、MS、回復力、スキルヘイストなどのバフがある<br>
+              最初の２体はランダム、３体目からはずっと固定<br>
+              そして三体目の登場と同時にMAPが少し変わる<br>
+              ４体のドラゴンを倒すとドラゴンソウルというものがもらえる、超強化バフ80%勝てる<br>
+              そのあと6分後からはずっとエルダードラゴン<br>
+              効果は<strong>HP20%以下の敵に確定キルをする</strong>最強、勝ち、あほ<br>
+            </p>
+            <li><strong>ヘラルド</strong>: 討伐するとアイテムをゲットできる、召喚するとタワーにタックルする、ヘラルドをクリックすると乗れる、気を付けて。</li>
+            <li><strong>バロン</strong>: 討伐するとミニオンを大幅に強化するバフを得られる。非常に強力なため、試合の終盤を動かす重要なオブジェクト。</li>
+            <p class="muted">ヘラルドやバロン以外討伐に関与すると、リコールが速くなる</p>
           </ul>
         </section>
 
         <hr>
 
-        <!-- 視界（ワード） -->
+                <!-- 視界（ワード） -->
         <section id="vision" class="card">
           <h2>視界（ワード）</h2>
           <p>
@@ -305,12 +298,12 @@
             「<strong>ワード</strong>」を置くことで、見えない場所に視界を確保できます。<br>
             ※これめちゃ重要
           </p>
-          <span class="muted">ワードの入れ物をトリンケットと言います。</span>
+          <p class="muted">ワードの入れ物をトリンケットと言います。</p>
           <ul>
-            <li><strong><span title="黄色ワード">ステルスワード</span></strong>: 置くと2秒後に敵から見えなくなるワードで、3本まで設置可能です。</li>
-            <li><strong><span title="ピンクワード">コントロールワード</span></strong>: 75ゴールドで購入でき、周囲の敵ワードやトラップを無効化できます。一人1つしか持てませんが、敵に壊されるか置いてあるのに新しいコントロールワードを置かない限りずっとある。非常に重要です。</li>
-            <li><strong><span title="赤ワード">オラクルレンズ</span></strong>: 使用すると周囲の隠されたワードや透明化しているトラップや透明な敵を見つけられます。</li>
-            <li><strong><span title="青ワード">ファーサイトオルタレーション</span></strong>: 9レべ以降に使えるワード、遠距離にさせる体力1のワード敵が視界に入ると壊れる</li>
+            <li><a class="tooltip-trigger" title="通称黄色ワード"><strong>ステルスワード</strong></a>: 置くと2秒後に敵から見えなくなるワードで、3本まで設置可能です。</li>
+            <li><a class="tooltip-trigger" title="通称ピンクワード"><strong>コントロールワード</strong></a>: 75ゴールドで購入でき、周囲の敵ワードやトラップを無効化できます。一人1つしか持てませんが、敵に壊されるか置いてあるのに新しいコントロールワードを置かない限りずっとある。非常に重要です。</li>
+            <li><a class="tooltip-trigger" title="通称赤ワード"><strong>オラクルレンズ</strong></a>: 使用すると周囲の隠されたワードや透明化しているトラップや透明な敵を見つけられます。</li>
+            <li><a class="tooltip-trigger" title="通称青ワード"><strong>ファーサイトオルタレーション</strong></a>: 9レべ以降に使えるワード、遠距離にさせる体力1のワード敵が視界に入ると壊れる</li>
           </ul>
         </section>
 
@@ -320,13 +313,56 @@
         <section id="minions" class="card">
           <h2>ミニオン / ウェーブ</h2>
           <p>
-            試合中に自動で出現する味方キャラクターを「<strong>ミニオン</strong>」と呼びます。
+            ミニオンとは？<br>
+            15CSで1キル分！！！！！<br>
+            後衛14G　キャノン60～90G　前衛21G<br>
+            ミニオンが自分の前にいない、<a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>,対象指定スキルをするとミニオンに殴られます<br>
+            方向指定と、ブッシュに入ると切れる（ワードがあると切れない）
           </p>
           <p>
-            敵ミニオンに<strong><span title="最後に攻撃を与えて倒す">ラストヒット</span></strong>をするとゴールドを獲得できます。これを「<strong>CS（クリープスコア）</strong>」と呼び、15CSで約1キル分のゴールドになります。
+            CSのコツ<br>
+            前衛タワー2発と<a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>、後衛タワー1発と<a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a><br>
+            CSは落としちゃダメ、絶対にね！！！QOL下がります<br>
+            （SUPやるときは触らない）<br>
+            <a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>はとりあえずするのではなく、自分のミニオンが誰を殴っているか見てみよう！<br>
+            次に死ぬミニオンを見つけてHPが低くなったら殴る、それ以外は関係ないキャラを殴る、移動してスキルをよける準備などしよう※CSを逃さないように<br>
+            まずは50cs/10分を狙おう！
           </p>
           <p>
-            ミニオンの集団を「<strong>ミニオンウェーブ</strong>」と呼び、このミニオンウェーブの位置をコントロールする「<strong>ウェーブコントロール</strong>」がLoLの重要な戦術です。
+            ウェーブとは？<br>
+            ミニオンウェーブ、キャノンがいるときはキャノンウェーブといいます<br>
+            最初のウェーブを除いて<br>
+            ～15:00までは3ウェーブに一回キャノンウェーブ<br>
+            15:00～25:00は2ウェーブに一回キャノンウェーブ<br>
+            25:00～は1ウェーブに一回キャノンウェーブ
+          </p>
+          <p>
+            ミニマップにウェーブ、ミニオンは映ります<br>
+            常に敵と味方のミニオンは同じタイミングで沸き同じ速度で来る
+          </p>
+          <p>
+            <strong>ウェーブコントロールとは？</strong><br>
+            ウェーブは跳ね返ります<br>
+            相手に押し付けるのが<strong>プルウェーブ</strong>、自分のタワーに引き付けるのが<strong>プッシュウェーブ</strong>といいます<br>
+            ミニオンの数は正義、数で勝てれば押すし、負けていれば押される<br>
+            タワーがあったり、敵のミニオンが先に到着するので交互にミニオンの位置が変わる
+          </p>
+          <p>
+            が、<strong>プルウェーブ</strong>をキープする（フリーズ）させると敵のミニオンが死ぬ<br>
+            ミニオン3,4体をキープするといいよ、敵が来たら追い返す<br>
+            （プッシュ状態だと自分が前に出る、つまり敵のガンクが刺さる、逆もしかり）<br>
+            ウェーブを押して帰れば跳ね返ってレーンに帰ってくるころには自分のもとへ！<br>
+            困ったらJGを呼んで一緒にウェーブを押す！
+          </p>
+          <p>
+            勝ってるならにウェーブを押して味方を助けに行く、ワードを刺しに行く、など時間の有効活用をしましょう<br>
+            では動くためには時間が必要、より多くのミニオンを相手に押し付けるためには？<strong>ビックウェーブ</strong>を作ろう<br>
+            大量のミニオンを集めるには？<br>
+            一つのウェーブはゆっくりラストヒットだけとる、二個目のウェーブでスキル全開で一気に消す<br>
+            1ウェーブ目の残ったミニオンと2ウェーブが合流すれば<strong>ビックウェーブ</strong>に！
+          </p>
+          <p>
+            これがウェーブコントロール
           </p>
         </section>
 
@@ -336,12 +372,27 @@
         <section id="towers" class="card">
           <h2>タワー</h2>
           <p>
-            敵のタワーを破壊すると、チーム全員にゴールドが入ります。
-            <br>
-            敵のネクサスに向かうにつれて、<strong>アウタータワー</strong>、<strong>インナータワー</strong>、<strong>インヒビタータワー</strong>、<strong>ネクサスタワー</strong>と段階的にタワーを破壊していく必要があります。
+            タワーとは？<br>
+            壊すとお金がもらえる<br>
+            敵のネクサスに行くまでに<br>
+            <strong>アウタータワー・インナータワー・インヒビタータワー・ネクサスタワー</strong>がある<br>
+            そしてゴールドには<strong>グローバルゴールド</strong>と<strong>ローカルゴールド</strong>がある！<br>
+            <strong>グローバルゴールド</strong>はどこにいてももらえる！<br>
+            <strong>ローカルゴールド</strong>をもらうには壊れるときにタワーの近くにいる、壊れる前にタワーに<a class="tooltip-trigger" title="通常攻撃"><strong>AA</strong></a>する、とお金がもらえる<br>
+            グローバルゴールド/ローカルゴールド<br>
+            アウター50/250 インナー25/675 インヒビ25/375 ネクサス50/0　がもらえます
           </p>
           <p>
-            特に<strong>インヒビタータワー</strong>を破壊すると、そのレーンに非常に強い「<strong>スーパーミニオン</strong>」が出現し、レーンを自動的にプッシュしてくれます。
+            そして試合開始14:00までは<strong>アウタータワー</strong>に<strong>プレート</strong>が付いている<br>
+            プレートはタワーを固くさせてる、プレートは削れば削るほど固くなっていく<br>
+            <strong>一枚はがすと125ゴールドのローカルゴールドがもらえる。</strong>
+          </p>
+          <p>
+            インヒビターを破壊するとキャノンは<strong>スーパーミニオン</strong>になる<br>
+            非常に強く勝手にプッシュしていく<br>
+            <strong>全てのインヒビターを破壊すると全レーンに二体ずつ</strong>になる、つまり6体が進軍...<br>
+            インヒビターは5分で復活する<br>
+            3っつのインヒビターを破壊できていれば勝率99%
           </p>
         </section>
 

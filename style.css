@@ -1,8 +1,5 @@
 :root{
-  --bg:#f7f7fb; --card:#fff; --muted:#6b7280; --text:#0f172a; --accent:#2563eb; --glass: rgba(255,255,255,0.6);
-}
-.dark{
-  --bg:#071024; --card:#0b1220; --muted:#94a3b8; --text:#e6f0ff; --accent:#60a5fa; --glass: rgba(255,255,255,0.03);
+  --bg:#f7f7fb; --card:#fff; --muted:#6b7280; --text:#0f172a; --accent:#2563eb;
 }
 *{box-sizing:border-box}
 html,body{
@@ -94,10 +91,6 @@ nav .toc a:hover{
 .content section.card{
   padding:24px;
 }
-.lead{
-  white-space:pre-wrap;
-  margin-bottom: 1rem;
-}
 .roles{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -108,7 +101,7 @@ nav .toc a:hover{
   border-radius:8px;
   padding:12px;
   border:1px solid rgba(2,6,23,0.04);
-  background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);
+  background:var(--card);
 }
 ul{
   margin:8px 0 12px 20px;
@@ -121,6 +114,35 @@ mark{
   color:white;
   padding:0 4px;
   border-radius:3px;
+}
+.tooltip-trigger{
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  cursor: help;
+  color: var(--accent);
+}
+.tooltip-trigger:hover::after {
+  content: attr(title);
+  position: absolute;
+  background-color: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: bold;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.tooltip-trigger::after {
+    visibility: hidden;
+}
+.tooltip-trigger:hover::after {
+    visibility: visible;
 }
 footer{
   text-align:center;
