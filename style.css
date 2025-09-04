@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 3px solid #0056b3;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #333;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.collapsible-btn {
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.collapsible-btn:hover {
+    background-color: #e9ecef;
+}
+
+.collapsible-btn:after {
+    content: '\002B'; /* Unicode for plus sign */
+    color: #333;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212"; /* Unicode for minus sign */
+}
+
+.content {
+    padding: 0 18px;
+    background-color: #f8f9fa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
