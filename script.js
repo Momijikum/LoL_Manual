@@ -7,9 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = this.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
+                content.style.padding = "0 18px";
             } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = "10px 18px";
             }
         });
     });
+
+    // 初期状態で最初のアコーディオンを開く
+    if(collapsibleBtns.length > 0) collapsibleBtns[0].click();
 });
