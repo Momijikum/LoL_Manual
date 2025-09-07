@@ -15,7 +15,7 @@
         <div class="subtitle">初心者向けに要点だけやさしくまとめました</div>
       </div>
       <div class="controls">
-        <input id="search" type="search" placeholder="協調表示されます" />
+        <input id="search" type="search" placeholder="検索欄" />
       </div>
     </header>
 
@@ -438,6 +438,85 @@
             設定でタイムスタンプをオンにしていると何分何秒にしたのかが分かる<br>
             例：敵がフラッシュを使ったらTABで敵のフラッシュをクリック、味方に敵のフラッシュが無いことが伝わるので手助けしてくれるかも...？
           </p>
+        </section>
+
+        以下に示す「用語集」を、提供された index.html ファイルの末尾に追加します。これにより、ユーザーがLoLに関する重要な用語を簡単に参照できるようになります。
+
+HTML
+
+        <hr>
+        <section id="glossary" class="card">
+            <h2>用語集</h2>
+            <p>
+                <strong>AA (Auto Attack)</strong>：オートアタック<br>
+                <strong>AoE (Area of Effect)</strong>：範囲攻撃<br>
+                <strong>AS (Attack speed)</strong>：攻撃速度<br>
+                <strong>AD (Attack Damage)</strong>：物理攻撃力<br>
+                <strong>AP (Ability Power)</strong>：魔法攻撃力<br>
+                <strong>AR (Armor Resist)</strong>：物理防御力<br>
+                <strong>MR (Magic Resist)</strong>：魔法防御力<br>
+                <strong>物理防御貫通 (Armor Resist Penetration)</strong>：物理防御力を貫通してダメージを与えることが出来る<br>
+                <strong>魔法防御貫通 (Magic Resist Penetration)</strong>：魔法防御力を貫通してダメージを与えることが出来る<br>
+                <strong>MS (Movement Speed)</strong>：移動速度<br>
+                <strong>サステイン</strong>：体力やマナを回復する能力<br>
+                <strong>重症</strong>：回復能力を低下させる状態異常のこと<br>
+                <strong>LS (ライフスティール)</strong>：通常攻撃と通常攻撃効果スキルで与えたダメージの一定量を回復すること<br>
+                <strong>スキルヘイスト・アビリティヘイスト</strong>：スキル時間の短縮率のこと<br>
+                <strong>CD (クールダウン)</strong>：スキル再使用までの待機時間のこと<br>
+                <strong>ブッシュ</strong>：フィールド内の草が生えている部分。ワードなどで敵に視界を取られていない限りバレない<br>
+                <strong>リバー</strong>：フィールド内にある川のこと<br>
+                <strong>オブジェクト</strong>：赤バフ、青バフ、バロン、ドラゴン、タワー、インヒビターなどのこと。（オブジェクトをしっかりと取っていくことをオブジェクト管理と言う）<br>
+                <strong>ドラゴン (ドラ、D)</strong>：中立モンスター（クラウド/インファーナル/オーシャン/マウンテン/エルダードラゴンの5種類）<br>
+                <strong>リフトヘラルド (ヘラルド)</strong>：バロンの前に出てくる中立モンスター（倒すことでヘラルドの瞳を獲得することができる。取らない場合は時間が経つと消えてしまう）<br>
+                <strong>バロン</strong>：中立モンスター（ラストヒットで倒すとチーム全体にバフがかかり、自軍のミニオンを強化することができる）<br>
+                <strong>リフトスカトル (スカトル) カニ</strong>：中立モンスター。倒すことで一定時間ドラゴンやバロンの前の視界を確保することができる<br>
+                <strong>赤バフ/青バフ</strong>：レッドバフとブルーバフのこと。ステータスを上昇させる効果をもつ<br>
+                <strong>ローム</strong>：ミッドレーンのプレイヤーがBOTやTOPなど他のレーンに行くこと<br>
+                <strong>スワップ (レーンスワップ)</strong>：トップとミッドがレーンを交代すること<br>
+                <strong>AFK (Away From Keyboard)</strong>：プレイヤーが動かない・離席している状態<br>
+                <strong>メレー</strong>：通常攻撃が近接系のチャンピオンのこと<br>
+                <strong>レンジ</strong>：通常攻撃が遠距離系のチャンピオンのこと<br>
+                <strong>CS (Creep Score)</strong>：ミニオンに対してラストヒットを行い、ゴールドを貯めること<br>
+                <strong>ウルト</strong>：チャンピョンの必殺技、R<br>
+                <strong>オールイン</strong>：敵に対して味方全員でスキルを使って戦闘すること<br>
+                <strong>カウンタージャングル</strong>：敵のジャングラーの行動に対して行うカウンター行為<br>
+                <strong>ガンク</strong>：味方ジャングラーなどがレーンに出て、相手チームを倒すこと<br>
+                <strong>カウンターガンク</strong>：相手のガンクを先読みし、逆に相手チームを倒すこと<br>
+                <strong>キャンプ</strong>：ジャングラーなどが1つのレーンに集中して、レーン戦を有利にすること<br>
+                <strong>KS (Kill Steal)</strong>：最後の攻撃のみを与えることで敵チャンピオンのキルを奪うこと。キルスティール<br>
+                <strong>グループ</strong>：味方チーム全員で集まって行動すること<br>
+                <strong>スティール</strong>：バロンやドラゴン、赤バフや青バフに最後の一撃を与えて敵チームから奪うこと。（バロンスティールやドラゴンスティールとも言う）<br>
+                <strong>スノーボール・スケール</strong>：序盤から相手に明確に有利を取っていき、育っていくこと<br>
+                <strong>スプリット・スプリットプッシュ</strong>：味方チームと行動せずに1人がサイドレーンを押していく戦術のこと。（相手タワーやインヒビターを破壊するために1人だけでレーンを押すこと）<br>
+                <strong>ゾーニング</strong>：敵にCSを取らせないように邪魔をするテクニックのこと<br>
+                <strong>バックドア</strong>：相手の隙を見て、相手チームのタワーやネクサスを破壊すること<br>
+                <strong>ハラス</strong>：相手チームへ一方的にダメージを与えること<br>
+                <strong>ピール</strong>：味方から敵を引き離すこと。主にADCなどを敵から守る動きのこと<br>
+                <strong>ベイト</strong>：草むらに隠れたり、囮をして相手チームを待ち伏せすること<br>
+                <strong>ポーク</strong>：敵の射程外から一方的に攻撃し、ダメージを与えること。集団戦前に敵の体力を削る行為のこと<br>
+                <strong>ブリンク</strong>：移動系スキルのこと<br>
+                <strong>プロキシ</strong>：タワー間でCSを取ること。相手側のインナータワーとアウタータワーの間でCSを獲得すること<br>
+                <strong>ファーム</strong>：ミニオンや中立モンスターを倒してゴールド、経験値を稼ぐこと<br>
+                <strong>ファンネリング</strong>：主にミッドとジャングルが一緒に動き続けて、味方ジャングラーをいち早く育てる戦術のこと<br>
+                <strong>ウェーブコントロール</strong>：レーンの進行を管理し、同じ位置に留まらせること（マクロレーンコントロールやオブジェクト管理など全体的な動きのこと）<br>
+                <strong>ミクロ</strong>：プレイヤーのテクニックやスキルの当て方など、操作の上手さに関するもの<br>
+                <strong>CC (Crowd Control)</strong>：チャンピオンの動きや行動を制限することを意味します<br>
+                <strong>DPS(Damage Per Second)</strong>：１秒間に与えるダメージ量のこと<br>
+                <strong>MIA (Missing In Action)</strong>：自分が担当しているレーンの敵が見えなくなる状況のこと<br>
+                <strong>ローム</strong>：レーナーがジャングルや他レーンに行くこと<br>
+                <strong>IE</strong>：インフィニティエッジというアイテム<br>
+                <strong>時計/砂時計</strong>：ゾーニャの砂時計というアイテム<br>
+                <strong>TF</strong>：トリニティ・フォースというアイテム<br>
+                <strong>重傷剣</strong>：エクスキューショナー・コーリングというアイテム<br>
+                <strong>血剣</strong>：ブラッドサースターというアイテム<br>
+                <strong>王剣</strong>：ルインドキングブレードというアイテム<br>
+                <strong>黒斧</strong>：ブラックリーパーというアイテム<br>
+                <strong>サッシュ</strong>：クイックシルバーサッシュというアイテム<br>
+                <strong>足袋</strong>：プレートスティールキャップというアイテム<br>
+                <strong>涙</strong>：女神の涙というアイテム<br>
+                <strong>ピンクワード</strong>：コントロールワード<br>
+                <strong>赤トリ/黃トリ/青トリ</strong>：それぞれのトリンケットのこと<br>
+            </p>
         </section>
 
         <footer class="card">
