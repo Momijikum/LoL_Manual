@@ -5,8 +5,8 @@
 html,body{
   height:100%;
   margin:0;
-  font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Hiragino Kaku Gothic ProN','Noto Sans JP', Roboto, 'Helvetica Neue', Arial; 
-  background:var(--bg); 
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Hiragino Kaku Gothic ProN','Noto Sans JP', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
   color:var(--text);
   line-height: 1.6;
 }
@@ -164,34 +164,45 @@ mark{
   padding:0 4px;
   border-radius:3px;
 }
-.tooltip-trigger{
+
+/* ツールチップの改善 */
+.tooltip-trigger {
+  position: relative;
+  cursor: help;
   text-decoration: underline;
   text-decoration-color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  cursor: help;
   color: var(--accent);
 }
-.tooltip-trigger:hover::after {
-  content: attr(title);
+
+.tooltip-trigger::after {
+  content: attr(data-tooltip); /* titleの代わりにdata-tooltip属性を使用 */
   position: absolute;
-  background-color: var(--accent);
-  color: white;
-  padding: 8px 12px;
-  border-radius: 8px;
-  z-index: 1000;
-  font-size: 16px;
-  font-weight: bold;
   bottom: 125%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  background-color: var(--text);
+  color: #fff;
+  padding: 10px 15px; /* サイズを大きく */
+  border-radius: 10px;
+  font-size: 16px; /* 文字を大きく */
+  font-weight: bold;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
-.tooltip-trigger::after {
-    visibility: hidden;
-}
+
 .tooltip-trigger:hover::after {
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    transition: background-color 0.5s ease;
 }
 footer{
   text-align:center;
@@ -224,5 +235,11 @@ hr {
   }
   .roles {
     grid-template-columns: 1fr;
+  }
+  .tooltip-trigger::after {
+    left: 0;
+    transform: none;
+    white-space: pre-wrap;
+    width: 250px;
   }
 }
